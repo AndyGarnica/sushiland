@@ -1,13 +1,11 @@
 :root {
-    /* --white-color: #FFFFFF;
-    --black-color: #0B0100;
-    --primary-color: #CB48B7;
-    --secondary-color: #2E2D4D; */
+    --logo-color: #A52D3B;
+
 }
 *{
     margin: 0;
     padding: 0;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
 
@@ -15,21 +13,27 @@
 header{
     width: 100%;
     height: 10vh;
-    background-color: var(--white-color);
+    border-top: 2px solid var(--logo-color);
     vertical-align: middle;
+    text-align: center
 
 }
 h1 {
-    font-size: 30px;
+    font-size: 25px;
     justify-content: flex-end;
     display: inline-block;
+    vertical-align: middle;
+    color: var(--logo-color);
+    font-family: 'Amatic SC', cursive;
 
 }
 header img {
 
-    width: 30px;
+    width: 40px;
     justify-content: flex-start;
     display: inline-block;
+    vertical-align: middle;
+
 
 }
 .form{
@@ -56,4 +60,10 @@ footer{
     width: 100%;
     height: 30vh;
 
+}
+
+@media screen and (max-width:768px) {
+    body{
+        /* border: 10px solid green; */
+    }
 }
