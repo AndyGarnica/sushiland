@@ -4,56 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forms</title>
+    <title>Sushiland</title>
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="./assets/img/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Amatic+SC" rel="stylesheet">
 
 </head>
 <body>
+    <!-- S E C C I O N   D E   T I T U L O   Y   L O G O  -->
     <header>
         <img src="assets/img/logo.png" alt="">
         <h1>Sushiland</h1>
     </header>
+        <!-- S E C C I O N   D E   T I T U L O   Y   L O G O  -->
+
     <main>
+
         <section class="form">
+            <!-- S E C C I O N   M E N U  -->
 
             <form id="sushi-form">
-                <!-- ligar el for con el input con el id -->
-                <label for="numero">Numero de Ordenes</label>
-                <input id="numero" type="number" name="numero" min="1" max="20">
-                <!-- menu de sushiland -->
-                <label for="menu">Menu</label>
-                <select name="menu" id="menu">
-                    <option value="salmon">Salmón</option>
-                    <option value="camaron">Camarón</option>
-                    <option value="philadelphia">Philadelphia</option>
-                    <option value="california">California</option>
-                </select>
+                <!-- Numero de ordenes -->
+                <label for="numero">Número de Ordenes</label>
+                <input id="numero" type="number" name="numero" min="1" max="20"> <br>
                 
-                
-                
-                
-                <!-- ligar el for con el input con el id -->
+                <!-- Elegir Sushi Roll -->
                 <label for="sushi">Elige tu Sushi Roll</label>
-                <input id="sushi" class="area" name="sushi" placeholder=" sushi...">
-                <!-- mandar datos a js -->
-                
-                <label for="ingrediente">Ingrediente</label>
+                <select name="sushi" id="sushi">
+                        <option value="salmon">Salmón</option>
+                        <option value="camaron">Camarón</option>
+                        <option value="atun">Atún</option>
+                    </select><br>
+
+                <!-- <label for="sushi">Elige tu Sushi Roll</label>
+                <input id="sushi" class="area" name="sushi" placeholder=" sushi..."><br> -->
+               
+                <!-- mandar datos a js --> 
+                <!-- <label for="ingrediente">Ingrediente</label>
                 <select name="ingrediente" id="ingrediente">
                     <option value="salmon">Salmón</option>
                     <option value="camaron">Camarón</option>
                     <option value="philadelphia">Philadelphia</option>
                     <option value="california">California</option>
-                </select>
+                </select><br> -->
 
-                <input type="submit" value="Pide tu Sushi Roll">
+                <input id="submit" type="submit" value="Tengo hambre">
             </form>
-        </section><aside class="sushi"></aside>
+        </section><aside class="ordenes">
+                <ul id="lista"></ul>
+        </aside>
     </main>
-    <section class="ordenes">
-            <ul id="lista"></ul>
-    </section>
 
     <footer></footer>
     <script src="./assets/script.js"></script>
